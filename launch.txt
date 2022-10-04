@@ -1,0 +1,19 @@
+public class  utiltiy{
+
+public static void launchBrowser(){
+System.setproperty("webdriver.chrome.driver","driver\\chromedriver.exe");
+Webdriver driver = new ChromeDriver();
+ }
+}    
+
+public static void WindowHandl(){
+
+Set<String>abc= driver.GetwindowHandl();
+for(String obj:abc);
+driver.switchTo().window(obj);
+String objw=driver.getTitle();
+if(objw.equals("Home page")){
+break;
+}
+
+}
